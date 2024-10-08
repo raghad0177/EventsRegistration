@@ -1,0 +1,26 @@
+﻿@model List<EventRegistrationSystem.Models.Event>
+
+<h2>Books List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>EventId</th>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var @even in Model)
+        {
+            <tr>
+                <td>@even.EventId</td>
+                <td>@even.Date</td>
+                <td>@even.Title</td>
+                <td>@even.Description</td>
+                <td>@even.Capacity</td>
+            </tr>
+        }
+    </tbody>
+</table>
