@@ -15,7 +15,7 @@ namespace EventRegistrationSystem.Controllers
             _configuration = configuration;
             _context = context;
         }
-
+         
         public IActionResult Index()
         {
             // Fetch registrations from the database and pass them to the view
